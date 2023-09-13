@@ -30,4 +30,18 @@ fun main(args: Array<String>) {
     println("Filter All negative numbers are $allNegative")
 //    println("All negative numbers are $allNegative")
 
+
+//    list of string names variable length
+    val names = listOf("Joh", "Je", "Mary", "Abdulahi", "Mohamed")
+    val longestName =names.reduce{acc , curr -> if(curr.length > acc.length) curr else acc}
+    val longestName2 =names.fold(0){acc , curr -> if(curr.length > acc) curr.length else acc}
+
+//    acc = 0 and curr = Joh -> 0 > 3 -> false -> acc = 3
+    // acc = 3 and curr = Je -> 3 > 2 -> true -> acc = 3
+
+    println("The longest name is $longestName")
+    println("The longest name length is ${longestName.length}")
+
+
+
 }
