@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Mohamed Ali",
+    "grade" : "A",
+    "studentId": "9123-1456-789"
+  },
+  {
+    "name": "Tahani Mohamed",
+    "grade" : "A",
+    "studentId": "8123-2456-789"
+  },
+  {
+    "name": "Dena Omar",
+    "grade" : "A",
+    "studentId": "7123-3456-789"
+  },
+  {
+    "name": "Mohamed Saeed",
+    "grade" : "B",
+    "studentId": "6123-4456-789"
+  },
+  {
+    "name": "Khalid Adam",
+    "grade" : "C",
+    "studentId": "5123-5456-789"
+  },
+  {
+    "name": "Sara Al-Ali",
+    "grade" : "B",
+    "studentId": "4123-6456-789"
+  },
+  {
+    "name": "Rania Abubaker",
+    "grade" : "A",
+    "studentId": "3123-7456-789"
+  }
+]
