@@ -58,11 +58,11 @@ fun MyApp(modifier: Modifier = Modifier) {
         modifier = modifier,
         color = MaterialTheme.colorScheme.background
     ) {
-        if (showOnBoard)
-            OnboardingScreen {
-                showOnBoard = it
-            }
-        else
+//        if (showOnBoard)
+//            OnboardingScreen {
+//                showOnBoard = it
+//            }
+//        else
             Column {
             names.forEach { name ->
                 Greeting(
@@ -112,16 +112,27 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     Text(text = "lorem epsum the quick brown fox jumps over the lazy dog.")
             }
 
-            ElevatedButton(
-                onClick = {
-                    expanded = !expanded
-                    Log.d("EXPANDED", "$expanded")
-                },
-                modifier = modifier
-                    .padding(24.dp)
-                    .weight(1f)
-            ) {
-                Text(text = if (expanded) "Show Less" else "Show More")
+            Column( modifier = modifier
+                .weight(1f)) {
+                ElevatedButton(
+                    onClick = {
+                        expanded = !expanded
+                        Log.d("EXPANDED", "$expanded")
+                    },
+                    modifier = modifier
+                        .padding(24.dp)
+                ) {
+                    Text(text = if (expanded) "Show Less" else "Show More")
+                }
+                ElevatedButton(
+                    onClick = {
+
+                    },
+                    modifier = modifier
+                        .padding(24.dp)
+                ) {
+                    Text(text = "Go Back")
+                }
             }
         }
     }
