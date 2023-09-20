@@ -5,7 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.MaterialTheme
@@ -38,17 +40,33 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun MyApp(modifier: Modifier = Modifier) {
-   Surface (
-       modifier = modifier,
-       color = MaterialTheme.colorScheme.background
-   ){
-       Greeting(name = "Hello Ms. Ikram")
-   }
+//    create 20 names
+    var names =
+        listOf("Bob", "Sara", "Lara", "Yara", "Zahra", "Layan", "Abdulahi", "Hour", "Ikram", "Hoor")
+
+    Surface(
+        modifier = modifier,
+        color = MaterialTheme.colorScheme.background
+    ) {
+
+        Column {
+            names.forEach { name ->
+                Greeting(
+                    name = name,
+                    modifier = Modifier.fillMaxWidth()
+                )
+            }
+
+        }
+    }
 }
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Surface(color = MaterialTheme.colorScheme.primary, modifier = modifier) {
+    Surface(color = MaterialTheme.colorScheme.primary,
+        modifier = modifier.padding(vertical = 10.dp , horizontal = 10.dp),
+
+        ) {
         Text(
             text = "Hello Ms. $name!",
             modifier = modifier.padding(24.dp)
@@ -64,7 +82,7 @@ fun GreetingPreview() {
 //                    modifier = Modifier.fillMaxSize(),
         color = MaterialTheme.colorScheme.background
     ) {
-        Greeting("Ms. Ikram")
+        MyApp()
 
     }
 
