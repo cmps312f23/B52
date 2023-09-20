@@ -49,6 +49,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp(modifier: Modifier = Modifier) {
 //    create 20 names
+    var showOnBoard by rememberSaveable { mutableStateOf(true) }
+
     var names =
         listOf("Bob", "Sara", "Lara", "Yara", "Zahra", "Layan", "Abdulahi", "Hour", "Ikram", "Hoor")
 
@@ -56,8 +58,12 @@ fun MyApp(modifier: Modifier = Modifier) {
         modifier = modifier,
         color = MaterialTheme.colorScheme.background
     ) {
-
-        Column {
+        if (showOnBoard)
+            OnboardingScreen {
+                showOnBoard = it
+            }
+        else
+            Column {
             names.forEach { name ->
                 Greeting(
                     name = name,
@@ -65,6 +71,18 @@ fun MyApp(modifier: Modifier = Modifier) {
                 )
             }
 
+        }
+    }
+}
+
+@Composable
+fun OnboardingScreen(updatedOnBoard: (Boolean) -> Unit) {
+    Surface(color = MaterialTheme.colorScheme.background) {
+        Column {
+            Text(text = "Welcome to JetPack Compose")
+            ElevatedButton(onClick = { updatedOnBoard(false) }) {
+                Text(text = "Continue")
+            }
         }
     }
 }
@@ -81,12 +99,19 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
         ) {
         Row {
-            Text(
-                text = "Hello Ms. $name!",
+            Column(
                 modifier = modifier
-                    .padding(24.dp)
                     .weight(1f)
-            )
+                    .padding(24.dp)
+            ) {
+                Text(
+                    text = "Hello Ms. $name!", modifier = modifier
+                        .padding(bottom = 4.dp)
+                )
+                if (expanded)
+                    Text(text = "lorem epsum the quick brown fox jumps over the lazy dog.")
+            }
+
             ElevatedButton(
                 onClick = {
                     expanded = !expanded
@@ -96,7 +121,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
                     .padding(24.dp)
                     .weight(1f)
             ) {
-                Text(text = if(expanded) "Show Less" else "Show More")
+                Text(text = if (expanded) "Show Less" else "Show More")
             }
         }
     }
