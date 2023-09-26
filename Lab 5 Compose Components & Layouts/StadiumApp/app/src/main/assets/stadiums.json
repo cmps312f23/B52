@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Al-Gharafa Stadium",
+    "city": "Al-Rayyan",
+    "status": "Major renovation",
+    "imageName": "al_gharafa"
+  },
+  {
+    "name": "Al-Khor Stadium",
+    "city": "Al-Khor ",
+    "status": "To be built",
+    "imageName": "al_khoor"
+  },
+  {
+    "name": "Al-Rayyan Stadium",
+    "city": "Al-Rayyan",
+    "status": "Major renovation",
+    "imageName": "al_rayan"
+  },
+  {
+    "name": "Al-Shamal Stadium",
+    "city": "Al-Shamal",
+    "status": "To be built",
+    "imageName": "al_shamal"
+  },
+  {
+    "name": "Al-Wakrah Stadium",
+    "city": "Al-Wakrah",
+    "status": "To be built",
+    "imageName": "al_wakra"
+  },
+  {
+    "name": "Education city stadium",
+    "city": " Al-Rayyan",
+    "status": "To be built",
+    "imageName": "education_city"
+  },
+  {
+    "name": "Umsallal Stadium",
+    "city": "Umsallal",
+    "status": "To be built",
+    "imageName": "umsallal"
+  },
+  {
+    "name": "Doha Port Stadium",
+    "city": "Al-Daayen",
+    "status": "To be built",
+    "imageName": "sports_city"
+  },
+  {
+    "name": "Lusail Iconic Stadium",
+    "city": " Lusail City ",
+    "status": "To be built",
+    "imageName": "lusail_city"
+  },
+  {
+    "name": "Qatar University Stadium",
+    "city": "Doha",
+    "status": "To be built",
+    "imageName": "qatar_university"
+  }
+]
