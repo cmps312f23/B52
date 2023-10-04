@@ -1,0 +1,73 @@
+[
+  {
+    "name": "Al-Gharafa Stadium",
+    "city": "Al-Rayyan",
+    "status": "Major renovation",
+    "imageName": "al_gharafa",
+    "seatingCapacity": 2412
+  },
+  {
+    "name": "Al-Khor Stadium",
+    "city": "Al-Khor ",
+    "status": "Completed",
+    "imageName": "al_khoor",
+    "seatingCapacity": 7212
+  },
+  {
+    "name": "Al-Rayyan Stadium",
+    "city": "Al-Rayyan",
+    "status": "Major renovation",
+    "imageName": "al_rayan",
+    "seatingCapacity": 8412
+  },
+  {
+    "name": "Al-Shamal Stadium",
+    "city": "Al-Shamal",
+    "status": "Completed",
+    "imageName": "al_shamal",
+    "seatingCapacity": 4242
+  },
+  {
+    "name": "Al-Wakrah Stadium",
+    "city": "Al-Wakrah",
+    "status": "To be built",
+    "imageName": "al_wakra",
+    "seatingCapacity": 5212
+  },
+  {
+    "name": "Education city stadium",
+    "city": " Al-Rayyan",
+    "status": "To be built",
+    "imageName": "education_city",
+    "seatingCapacity": 7645
+  },
+  {
+    "name": "Umsallal Stadium",
+    "city": "Umsallal",
+    "status": "To be built",
+    "imageName": "umsallal",
+    "seatingCapacity": 3433
+  },
+  {
+    "name": "Doha Port Stadium",
+    "city": "Al-Daayen",
+    "status": "To be built",
+    "imageName": "sports_city",
+    "seatingCapacity": 5435
+  },
+  {
+    "name": "Lusail Iconic Stadium",
+    "city": " Lusail City ",
+    "status": "Completed",
+    "imageName": "lusail_city",
+    "seatingCapacity": 6754
+  },
+  {
+    "name": "Qatar University Stadium",
+    "city": "Doha",
+    "status": "To be built",
+    "imageName": "qatar_university",
+    "seatingCapacity": 3243
+  }
+]
+
