@@ -82,18 +82,19 @@ fun StadiumCardPreview() {
 
 @Composable
 fun StadiumList(stadiums: List<Stadium> , modifier: Modifier = Modifier) {
-    stadiums.forEach {
-        StadiumCard(it)
+    LazyColumn {
+        items(stadiums){
+            StadiumCard(it)
+        }
     }
 }
 
 @Preview
 @Composable
-fun StadiumList() {
+fun StadiumListPreview() {
     val stadiums = StadiumRepo.getStadiums(LocalContext.current)
-   LazyColumn {
-       items(stadiums){
-           StadiumCard(it)
-       }
-   }
+    StadiumsTheme {
+        StadiumList(stadiums)
+    }
+
 }
