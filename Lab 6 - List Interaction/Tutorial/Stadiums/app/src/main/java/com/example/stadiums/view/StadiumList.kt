@@ -81,9 +81,9 @@ fun StadiumCardPreview() {
 }
 
 @Composable
-fun StadiumList(stadiums: List<Stadium> , modifier: Modifier = Modifier) {
-    LazyColumn {
-        items(stadiums){
+fun StadiumList(stadiums: List<Stadium>, modifier: Modifier = Modifier) {
+    LazyColumn(modifier = modifier) {
+        items(stadiums) {
             StadiumCard(it)
         }
     }

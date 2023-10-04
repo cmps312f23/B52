@@ -4,7 +4,9 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -47,9 +49,13 @@ fun MyApp(modifier: Modifier = Modifier) {
     val stadiums by remember { mutableStateOf(StadiumRepo.getStadiums(context)) }
 
     Scaffold(
-        topBar = { TopBar() },
+        topBar = {
+            TopBar() {
+
+            }
+        },
         content = {
-            StadiumList(stadiums)
+            StadiumList(stadiums, modifier = Modifier.padding(it))
         }
     )
 }
