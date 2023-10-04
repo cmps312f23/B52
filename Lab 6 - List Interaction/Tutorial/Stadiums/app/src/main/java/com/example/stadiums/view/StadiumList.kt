@@ -1,8 +1,10 @@
 package com.example.stadiums.view
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -11,6 +13,9 @@ import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
+import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
+import androidx.compose.foundation.lazy.staggeredgrid.items
 import androidx.compose.material3.Card
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -37,12 +42,11 @@ fun StadiumCard(stadium: Stadium, modifier: Modifier = Modifier) {
     )
     Card(
         modifier = modifier
-            .fillMaxWidth()
+            .fillMaxHeight()
             .padding(10.dp)
     ) {
-        Row(
-            modifier = modifier.padding(10.dp), verticalAlignment =
-            Alignment.CenterVertically
+        Column(
+            modifier = modifier.padding(10.dp), horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Image(
                 painter = painterResource(id = imageId),
@@ -51,15 +55,15 @@ fun StadiumCard(stadium: Stadium, modifier: Modifier = Modifier) {
                     .size(150.dp)
                     .padding(end = 10.dp)
             )
-            Column {
-                Text(
-                    text = stadium.name,
-                    style = MaterialTheme.typography.titleLarge,
-                )
-                Text(text = "City : ${stadium.city}")
-                Text(text = "Status : ${stadium.status}")
-                Text(text = "Capacity : ${stadium.seatingCapacity}")
-            }
+
+            Text(
+                text = stadium.name,
+                style = MaterialTheme.typography.titleLarge,
+            )
+            Text(text = "City : ${stadium.city}")
+            Text(text = "Status : ${stadium.status}")
+            Text(text = "Capacity : ${stadium.seatingCapacity}")
+
 
         }
     }
@@ -80,9 +84,13 @@ fun StadiumCardPreview() {
     }
 }
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun StadiumList(stadiums: List<Stadium>, modifier: Modifier = Modifier) {
-    LazyColumn(modifier = modifier) {
+    LazyVerticalStaggeredGrid(
+        modifier = modifier,
+        columns = StaggeredGridCells.Fixed(2)
+    ) {
         items(stadiums) {
             StadiumCard(it)
         }

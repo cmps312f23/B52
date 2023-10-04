@@ -9,7 +9,7 @@ object SortOptions {
     const val NAME = "NAME"
     const val CITY = "CITY"
     const val SEATING_CAPACITY = "SEATING_CAPACITY"
-    const val NONE = "NONE"
+    const val NONE = "UNSORTED"
 }
 object StadiumRepo {
     //    a variable that can strore the stadiums

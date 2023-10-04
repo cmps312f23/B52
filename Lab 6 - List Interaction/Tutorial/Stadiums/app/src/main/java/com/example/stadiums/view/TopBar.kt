@@ -21,12 +21,14 @@ import com.example.stadiums.ui.theme.StadiumsTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun TopBar(filterQuery: (String) -> Unit) {
+fun TopBar(
+    filterQuery: (String) -> Unit,
+    sortedBy: (String) -> Unit
+) {
     var query by rememberSaveable { mutableStateOf("") }
 
     Row(modifier = Modifier.padding(10.dp)) {
         TextField(
-            modifier = Modifier.weight(1f),
             value = query,
             onValueChange = {
                 query = it
@@ -46,6 +48,9 @@ fun TopBar(filterQuery: (String) -> Unit) {
                     )
             }
         )
+        SortDropDown(sortBy = {
+            sortedBy(it)
+        })
     }
 
 }
@@ -54,6 +59,6 @@ fun TopBar(filterQuery: (String) -> Unit) {
 @Composable
 fun TopBarPreview() {
     StadiumsTheme {
-        TopBar{}
+//        TopBar {}
     }
 }
