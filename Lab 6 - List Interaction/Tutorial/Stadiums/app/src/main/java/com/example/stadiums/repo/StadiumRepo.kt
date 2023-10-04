@@ -1,6 +1,7 @@
 package com.example.stadiums.repo
 
 import android.content.Context
+import androidx.compose.ui.platform.LocalContext
 import com.example.stadiums.model.Stadium
 import kotlinx.serialization.json.Json
 
@@ -26,3 +27,4 @@ object StadiumRepo {
         return stadiums
     }
 }
+
