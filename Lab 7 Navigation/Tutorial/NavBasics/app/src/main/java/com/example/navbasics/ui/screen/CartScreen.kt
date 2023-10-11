@@ -2,6 +2,7 @@ package com.example.navbasics.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -15,7 +16,7 @@ import com.example.navbasics.ui.theme.NavBasicsTheme
 fun CartScreen() {
     Box(
         contentAlignment = Alignment.Center,
-        modifier = Modifier.background(MaterialTheme.colorScheme.tertiary)
+        modifier = Modifier.background(MaterialTheme.colorScheme.tertiary).fillMaxSize()
     ) {
         Text(
             text = "Cart Screen", fontSize = 40.sp,

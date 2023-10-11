@@ -4,14 +4,19 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.NavigationBar
+import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.compose.rememberNavController
 import com.example.navbasics.ui.nav.MyNavHost
+import com.example.navbasics.ui.screen.Screen
 import com.example.navbasics.ui.theme.NavBasicsTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,8 +39,32 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp(modifier: Modifier = Modifier) {
     val navController = rememberNavController()
-    Scaffold (){
-        MyNavHost(navController = navController , it)
+    val screens = listOf(
+        Screen.FirstScreen,Screen.SecondScreen, Screen.CartScreen
+    )
+    Scaffold(
+        bottomBar = {
+            NavigationBar {
+                screens.forEach {
+                    NavigationBarItem(
+                        selected = true,
+                        onClick = {
+                            navController.navigate(it.route)
+                        },
+                        icon = {
+                            Icon(
+                                imageVector = it.icon,
+                                contentDescription = ""
+                            )
+                        },
+                        label = { Text(it.title) }
+                    )
+
+                }
+            }
+        }
+    ) {
+        MyNavHost(navController = navController, it)
     }
 }
 
