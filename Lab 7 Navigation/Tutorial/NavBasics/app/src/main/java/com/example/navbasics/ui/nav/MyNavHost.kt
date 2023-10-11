@@ -4,8 +4,10 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material3.Button
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
+import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import androidx.navigation.navArgument
 import com.example.navbasics.ui.screen.CartScreen
 import com.example.navbasics.ui.screen.FirstScreen
 import com.example.navbasics.ui.screen.Screen
@@ -31,8 +33,18 @@ fun MyNavHost(
         composable(route = Screen.SecondScreen.route) {
             SecondScreen()
         }
-        composable(route = Screen.CartScreen.route) {
-            CartScreen()
+        composable(
+            route = Screen.CartScreen.route,
+            arguments = listOf(
+                navArgument("productId") {type = NavType.IntType},
+                navArgument("productName") {type = NavType.StringType},
+            )
+        ) {
+            CartScreen(
+                it.arguments?.getInt("productId") ,
+                it.arguments?.getString("productName") ,
+
+                )
         }
     }
 }

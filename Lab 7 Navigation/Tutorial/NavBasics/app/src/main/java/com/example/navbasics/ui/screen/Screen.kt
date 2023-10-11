@@ -10,5 +10,5 @@ import androidx.compose.ui.graphics.vector.ImageVector
 sealed class Screen(val route: String, val title : String, val icon : ImageVector){
     object FirstScreen : Screen("first" , "First Screen" , Icons.Default.ScreenShare)
     object SecondScreen : Screen("second" , "Second Screen" , Icons.Default.EmergencyShare)
-    object CartScreen : Screen("cart" , "Cart Screen" , Icons.Default.ShoppingCart)
+    object CartScreen : Screen("cart/{productId}/{productName}" , "Cart Screen" , Icons.Default.ShoppingCart)
 }
