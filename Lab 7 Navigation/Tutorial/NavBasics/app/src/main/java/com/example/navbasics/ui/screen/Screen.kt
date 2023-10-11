@@ -6,8 +6,9 @@ import androidx.compose.material.icons.filled.ScreenShare
 import androidx.compose.material.icons.filled.ShoppingCart
 import androidx.compose.ui.graphics.vector.ImageVector
 
+//http://localhsot:8080/api/home/products/1
 sealed class Screen(val route: String, val title : String, val icon : ImageVector){
-    object FirstScreen : Screen("first-screen" , "First Screen" , Icons.Default.ScreenShare)
-    object SecondScreen : Screen("second-screen" , "Second Screen" , Icons.Default.EmergencyShare)
-    object CartScreen : Screen("first-screen" , "Cart Screen" , Icons.Default.ShoppingCart)
+    object FirstScreen : Screen("first" , "First Screen" , Icons.Default.ScreenShare)
+    object SecondScreen : Screen("second" , "Second Screen" , Icons.Default.EmergencyShare)
+    object CartScreen : Screen("cart" , "Cart Screen" , Icons.Default.ShoppingCart)
 }
