@@ -73,5 +73,5 @@ dependencies {
 
 //    navigation dependency
     val navVersion = "2.7.4"
-    implementation("androidx.navigation:navigation-compose:$navVersion")
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 }
