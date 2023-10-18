@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Tesla's Strong Financial Results",
+    "article": "Tesla has released its latest financial results, which show a significant increase in revenue and profits.",
+    "image": "images_5",
+    "category": "Business",
+    "author": "David Williams",
+    "date": "2023-10-18"
+  },
+  {
+    "title": "Amazon's Workforce Expansion Plan",
+    "article": "Amazon has announced a new plan to expand its workforce by 100,000 jobs.",
+    "image": "images_6",
+    "category": "Business",
+    "author": "Susan Brown",
+    "date": "2023-10-19"
+  },
+  {
+    "title": "Meta's Quarterly Revenue Decline",
+    "article": "Meta has reported its first quarterly revenue decline since going public in 2012.",
+    "image": "images_7",
+    "category": "Business",
+    "author": "Michael Miller",
+    "date": "2023-10-12"
+  },
+  {
+    "title": "Supreme Court Reverses Roe v. Wade",
+    "article": "The Supreme Court has overturned Roe v. Wade, the landmark ruling that legalized abortion nationwide.",
+    "image": "images_2",
+    "category": "Politics",
+    "author": "Jane Doe",
+    "date": "2023-8-14"
+  },
+  {
+    "title": "House Passes Assault Weapons Ban",
+    "article": "The House of Representatives has passed a bill to ban assault weapons.",
+    "image": "images_3",
+    "category": "Politics",
+    "author": "Peter Jones",
+    "date": "2023-7-14"
+  },
+  {
+    "title": "Senate Confirms Ketanji Brown Jackson",
+    "article": "The Senate has voted to confirm Ketanji Brown Jackson as the first Black woman to serve on the Supreme Court.",
+    "image": "images_4",
+    "category": "Politics",
+    "author": "Mary Johnson",
+    "date": "2023-10-15"
+  },
+  {
+    "title": "Federal Reserve Raises Interest Rates",
+    "article": "The Federal Reserve has raised interest rates by 0.75 percentage points in an effort to combat inflation.",
+    "image": "images_8",
+    "category": "Business",
+    "author": "Elizabeth Jones",
+    "date": "2023-10-1"
+  },
+  {
+    "title": "Google's New AI Chip Announcement",
+    "article": "Google has announced the development of a new AI chip that is expected to be significantly faster and more efficient than existing chips.",
+    "image": "images_11",
+    "category": "Technology",
+    "author": "William Smith",
+    "date": "2023-10-14"
+  },
+  {
+    "title": "Apple's Latest iPhone Release",
+    "article": "Apple has released its latest iPhone, which is expected to be available in stores next month.",
+    "image": "images_13",
+    "category": "Technology",
+    "author": "Sarah Williams",
+    "date": "2023-11-14"
+  },
+  {
+    "title": "Microsoft's Partnership with Google",
+    "article": "Microsoft has announced a new partnership with Google to develop cloud computing solutions.",
+    "image": "images_15",
+    "category": "Technology",
+    "author": "John Smith",
+    "date": "2023-8-14"
+  },
+  {
+    "title": "Elon Musk's Acquisition of Twitter",
+    "article": "Elon Musk has acquired Twitter for 44 Billion dollars",
+    "image": "images_17",
+    "category": "Technology",
+    "author": "Jane Doe",
+    "date": "2023-10-14"
+  },
+  {
+    "title": "Biden's Climate Plan Announcement",
+    "article": "President Biden has announced a new plan to address the climate crisis.",
+    "image": "images_1",
+    "category": "Politics",
+    "author": "John Smith",
+    "date": "2023-9-14"
+  }
+]
