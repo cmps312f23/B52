@@ -1,0 +1,17 @@
+[
+  {
+    "beneficiaryName": "Mohamed Ali",
+    "beneficiaryAccountNo": "9123-1456-789",
+    "fromAccountNo": "19123-1456-789",
+    "amount": 1000.0,
+    "transferId": 1
+  },
+  {
+    "beneficiaryName": "Abdulrahman Mohamed",
+    "beneficiaryAccountNo": "8123-2456-789",
+    "fromAccountNo": "19123-1456-789",
+    "amount": 230.0,
+    "transferId": 2
+  }
+]
+
