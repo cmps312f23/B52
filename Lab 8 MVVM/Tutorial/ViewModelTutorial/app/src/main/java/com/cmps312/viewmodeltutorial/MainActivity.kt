@@ -42,6 +42,7 @@ class CounterViewModel : ViewModel() {
     var counter by mutableStateOf(0)
         private set
 
+
     fun increment() {
         counter++
     }
