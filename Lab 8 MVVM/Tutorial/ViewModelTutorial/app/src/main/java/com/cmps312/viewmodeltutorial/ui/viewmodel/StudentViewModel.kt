@@ -8,6 +8,7 @@ import androidx.lifecycle.ViewModel
 import com.cmps312.viewmodeltutorial.model.Student
 import com.cmps312.viewmodeltutorial.repo.StudentRepo
 
-class StudentViewModel : ViewModel (){
+class StudentViewModel : ViewModel() {
     var students by mutableStateOf(StudentRepo.getStudents())
+        private set
 }
