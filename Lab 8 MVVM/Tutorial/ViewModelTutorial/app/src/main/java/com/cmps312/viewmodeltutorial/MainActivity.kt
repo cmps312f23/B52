@@ -19,7 +19,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.cmps312.viewmodeltutorial.ui.screens.StudentsList
 import com.cmps312.viewmodeltutorial.ui.theme.ViewModelTutorialTheme
+import com.cmps312.viewmodeltutorial.ui.viewmodel.StudentViewModel
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,11 +33,17 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    MyApp()
                 }
             }
         }
     }
+}
+
+@Composable
+fun MyApp(){
+    val viewModel : StudentViewModel = viewModel()
+    StudentsList(viewModel)
 }
 
 class CounterViewModel : ViewModel() {
