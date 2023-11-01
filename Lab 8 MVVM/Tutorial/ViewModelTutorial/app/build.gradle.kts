@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.cmps312.viewmodeltutorial"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.cmps312.viewmodeltutorial"
