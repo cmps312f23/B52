@@ -3,8 +3,12 @@ package com.cmps312.viewmodeltutorial
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
+import androidx.compose.material3.Divider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -15,10 +19,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.cmps312.viewmodeltutorial.ui.screens.DetailsScreen
 import com.cmps312.viewmodeltutorial.ui.screens.StudentsList
 import com.cmps312.viewmodeltutorial.ui.theme.ViewModelTutorialTheme
 import com.cmps312.viewmodeltutorial.ui.viewmodel.StudentViewModel
@@ -41,9 +48,13 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun MyApp(){
-    val viewModel : StudentViewModel = viewModel()
-    StudentsList(viewModel)
+fun MyApp() {
+    val viewModel: StudentViewModel = viewModel()
+    Column {
+        StudentsList(viewModel)
+        Divider(modifier = Modifier.height(10.dp).background(Color.Red))
+        DetailsScreen(viewModel)
+    }
 }
 
 class CounterViewModel : ViewModel() {
