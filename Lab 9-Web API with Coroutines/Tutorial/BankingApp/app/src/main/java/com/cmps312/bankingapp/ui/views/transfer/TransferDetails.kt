@@ -30,7 +30,7 @@ fun TransferDetails(
     bankingViewModel: BankingViewModel,
     transferId: String,
     onNavigateBack: () -> Unit
-) {
+)  {
 
     val transfer =
         bankingViewModel.transfers.collectAsState().value

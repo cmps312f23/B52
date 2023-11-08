@@ -1,0 +1,452 @@
+[
+  {
+    "id": "abcde",
+    "title": "Brown eggs",
+    "category": "dairy",
+    "description": "Raw organic brown eggs in a basket",
+    "price": 28.1,
+    "rating": 4,
+    "imageName": "brown_eggs"
+  },
+  {
+    "id": "fghij",
+    "title": "Sweet fresh strawberry",
+    "category": "fruit",
+    "description": "Sweet fresh strawberry on the wooden table",
+    "price": 29.45,
+    "rating": 4,
+    "imageName": "sweet_fresh_strawberry"
+  },
+  {
+    "id": "klmno",
+    "title": "Asparagus",
+    "category": "vegetable",
+    "description": "Asparagus with ham on the wooden table",
+    "price": 18.95,
+    "rating": 3,
+    "imageName": "asparagus"
+  },
+  {
+    "id": "pqrst",
+    "title": "Green smoothie",
+    "category": "dairy",
+    "description": "Glass of green smoothie with quail egg's yolk, served with cocktail tube, green apple and baby spinach leaves over tin surface.",
+    "price": 17.68,
+    "rating": 4,
+    "imageName": "green_smoothie"
+  },
+  {
+    "id": "uvwxy",
+    "title": "Raw legumes",
+    "category": "vegetable",
+    "description": "Raw legumes on the wooden table",
+    "price": 17.11,
+    "rating": 2,
+    "imageName": "raw_legumes"
+  },
+  {
+    "id": "zabcd",
+    "title": "Baking cake",
+    "category": "dairy",
+    "description": "Baking cake in rural kitchen - dough recipe ingredients (eggs, flour, sugar) on vintage wooden table from above.",
+    "price": 11.14,
+    "rating": 4,
+    "imageName": "baking_cake"
+  },
+  {
+    "id": "efghi",
+    "title": "Pesto with basil",
+    "category": "vegetable",
+    "description": "Italian traditional pesto with basil, cheese, and oil",
+    "price": 18.19,
+    "rating": 2,
+    "imageName": "pesto_with_basil"
+  },
+  {
+    "id": "jklmn",
+    "title": "Hazelnut in black ceramic bowl",
+    "category": "vegetable",
+    "description": "Hazelnut in black ceramic bowl on old wooden background. forest wealth. rustic style. selective focus",
+    "price": 27.35,
+    "rating": 0,
+    "imageName": "hazelnut_in_black_ceramic_bowl"
+  },
+  {
+    "id": "opqrs",
+    "title": "Fresh strawberry",
+    "category": "fruit",
+    "description": "Sweet fresh strawberry on the wooden table",
+    "price": 28.59,
+    "rating": 4,
+    "imageName": "fresh_strawberry"
+  },
+  {
+    "id": "tuvwx",
+    "title": "Lemon and salt",
+    "category": "fruit",
+    "description": "Rosemary, lemon and salt on the table",
+    "price": 15.79,
+    "rating": 5,
+    "imageName": "lemon_and_salt"
+  },
+  {
+    "id": "yzabc",
+    "title": "Homemade bread",
+    "category": "bakery",
+    "description": "Homemade bread",
+    "price": 17.48,
+    "rating": 3,
+    "imageName": "homemade_bread"
+  },
+  {
+    "id": "defgh",
+    "title": "Legumes",
+    "category": "vegetable",
+    "description": "Cooked legums on the wooden table",
+    "price": 14.77,
+    "rating": 0,
+    "imageName": "legumes"
+  },
+  {
+    "id": "ijklm",
+    "title": "Fresh tomato",
+    "category": "vegetable",
+    "description": "Fresh tomato juice with basil",
+    "price": 16.3,
+    "rating": 2,
+    "imageName": "fresh_tomato"
+  },
+  {
+    "id": "nopqr",
+    "title": "Healthy breakfast",
+    "category": "fruit",
+    "description": "Healthy breakfast set. rice cereal or porridge with berries and honey over rustic wood background",
+    "price": 13.02,
+    "rating": 2,
+    "imageName": "healthy_breakfast"
+  },
+  {
+    "id": "stuvw",
+    "title": "Green beans",
+    "category": "vegetable",
+    "description": "Raw organic green beans ready to eat",
+    "price": 28.79,
+    "rating": 1,
+    "imageName": "green_beans"
+  },
+  {
+    "id": "xyzab",
+    "title": "Baked stuffed portabello mushrooms",
+    "category": "bakery",
+    "description": "Homemade baked stuffed portabello mushrooms with spinach and cheese",
+    "price": 20.31,
+    "rating": 1,
+    "imageName": "baked_stuffed_portabello_mushrooms"
+  },
+  {
+    "id": "cdefg",
+    "title": "Strawberry jelly",
+    "category": "fruit",
+    "description": "Homemade organic strawberry jelly in a jar",
+    "price": 14.18,
+    "rating": 1,
+    "imageName": "strawberry_jelly"
+  },
+  {
+    "id": "hijkl",
+    "title": "Pears juice",
+    "category": "fruit",
+    "description": "Fresh pears juice on the wooden table",
+    "price": 19.49,
+    "rating": 4,
+    "imageName": "pears_juice"
+  },
+  {
+    "id": "mnopq",
+    "title": "Fresh pears",
+    "category": "fruit",
+    "description": "Sweet fresh pears on the wooden table",
+    "price": 15.12,
+    "rating": 5,
+    "imageName": "fresh_pears"
+  },
+  {
+    "id": "rstuv",
+    "title": "Caprese salad",
+    "category": "vegetable",
+    "description": "Homemade healthy caprese salad with tomato mozzarella and basil",
+    "price": 16.76,
+    "rating": 5,
+    "imageName": "caprese_salad"
+  },
+  {
+    "id": "wxyza",
+    "title": "Oranges",
+    "category": "fruit",
+    "description": "Orange popsicle ice cream bars made from fresh oranges. a refreshing summer treat.",
+    "price": 21.48,
+    "rating": 4,
+    "imageName": "oranges"
+  },
+  {
+    "id": "bcdef",
+    "title": "Vegan food",
+    "category": "vegetable",
+    "description": "Concept of vegan food",
+    "price": 29.66,
+    "rating": 4,
+    "imageName": "vegan_food"
+  },
+  {
+    "id": "ghijk",
+    "title": "Breakfast with muesli",
+    "category": "dairy",
+    "description": "Concept of healthy breakfast with muesli",
+    "price": 22.7,
+    "rating": 2,
+    "imageName": "breakfast_with_muesli"
+  },
+  {
+    "id": "lmnop",
+    "title": "Honey",
+    "category": "bakery",
+    "description": "Honey and honeycell on the table",
+    "price": 17.01,
+    "rating": 2,
+    "imageName": "honey"
+  },
+  {
+    "id": "qrstu",
+    "title": "Breakfast with cottage",
+    "category": "fruit",
+    "description": "Healthy breakfast with cottage cheese and strawberry",
+    "price": 14.05,
+    "rating": 1,
+    "imageName": "breakfast_with_cottage"
+  },
+  {
+    "id": "vwxyz",
+    "title": "Strawberry smoothie",
+    "category": "fruit",
+    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over dark background",
+    "price": 28.86,
+    "rating": 2,
+    "imageName": "strawberry_smoothie"
+  },
+  {
+    "id": "abcdef",
+    "title": "Strawberry and mint",
+    "category": "fruit",
+    "description": "Homemade muesli with strawberry and mint",
+    "price": 26.21,
+    "rating": 4,
+    "imageName": "strawberry_and_mint"
+  },
+  {
+    "id": "ghijkl",
+    "title": "Ricotta",
+    "category": "dairy",
+    "description": "Ricotta with berry and mint",
+    "price": 27.81,
+    "rating": 5,
+    "imageName": "ricotta"
+  },
+  {
+    "id": "mnopqr",
+    "title": "Cuban sandwich",
+    "category": "bakery",
+    "description": "Homemade traditional cuban sandwiches with ham pork and cheese",
+    "price": 18.5,
+    "rating": 4,
+    "imageName": "cuban_sandwich"
+  },
+  {
+    "id": "stuvwx",
+    "title": "Granola",
+    "category": "dairy",
+    "description": "Glass jar with homemade granola and yogurt with nuts, raspberries and blackberries on wooden cutting board over white textile in day light",
+    "price": 29.97,
+    "rating": 3,
+    "imageName": "granola"
+  },
+  {
+    "id": "yzabcd",
+    "title": "Smoothie with chia seeds",
+    "category": "fruit",
+    "description": "Glass of red strawberry smoothie with chia seeds, served with retro cocktail tube, fresh mint and strawberries over wooden table",
+    "price": 25.26,
+    "rating": 5,
+    "imageName": "smoothie_with_chia_seeds"
+  },
+  {
+    "id": "efghij",
+    "title": "Yogurt",
+    "category": "dairy",
+    "description": "Homemade yogurt with raspberry and mint",
+    "price": 27.61,
+    "rating": 4,
+    "imageName": "yogurt"
+  },
+  {
+    "id": "klmnop",
+    "title": "Sandwich with salad",
+    "category": "vegetable",
+    "description": "Vegan sandwich with salad, tomato and radish",
+    "price": 22.48,
+    "rating": 5,
+    "imageName": "sandwich_with_salad"
+  },
+  {
+    "id": "qrstuv",
+    "title": "Cherry",
+    "category": "fruit",
+    "description": "Cherry with sugar on old table",
+    "price": 14.35,
+    "rating": 5,
+    "imageName": "cherry"
+  },
+  {
+    "id": "wxyzab",
+    "title": "Raw asparagus",
+    "category": "vegetable",
+    "description": "Raw fresh asparagus salad with cheese and dressing",
+    "price": 22.97,
+    "rating": 4,
+    "imageName": "raw_asparagus"
+  },
+  {
+    "id": "cdefgh",
+    "title": "Corn",
+    "category": "vegetable",
+    "description": "Grilled corn on the cob with salt and butter",
+    "price": 13.55,
+    "rating": 2,
+    "imageName": "corn"
+  },
+  {
+    "id": "ijklmn",
+    "title": "Vegan",
+    "category": "vegan",
+    "description": "Concept of healthy vegan eating",
+    "price": 28.96,
+    "rating": 5,
+    "imageName": "vegan"
+  },
+  {
+    "id": "opqrst",
+    "title": "Fresh blueberries",
+    "category": "fruit",
+    "description": "Healthy breakfast. berry crumble with fresh blueberries, raspberries, strawberries, almond, walnuts, pecans, yogurt, and mint in ceramic plates over white wooden surface, top view",
+    "price": 21.01,
+    "rating": 4,
+    "imageName": "fresh_blueberries"
+  },
+  {
+    "id": "uvwxyz",
+    "title": "Smashed avocado",
+    "category": "fruit",
+    "description": "Vegan sandwiches with smashed avocado, tomatoes and radish. top view",
+    "price": 25.88,
+    "rating": 0,
+    "imageName": "smashed_avocado"
+  },
+  {
+    "id": "abcdefg",
+    "title": "Italian ciabatta",
+    "category": "bakery",
+    "description": "Italian ciabatta bread cut in slices on wooden chopping board with herbs, garlic and olives over dark grunge backdrop, top view",
+    "price": 15.18,
+    "rating": 1,
+    "imageName": "italian_ciabatta"
+  },
+  {
+    "id": "hijklmn",
+    "title": "Rustic breakfast",
+    "category": "dairy",
+    "description": "Rustic healthy breakfast set. cooked buckwheat groats with milk and honey on dark grunge backdrop. top view, copy space",
+    "price": 21.32,
+    "rating": 0,
+    "imageName": "rustic_breakfast"
+  },
+  {
+    "id": "opqrstu",
+    "title": "Sliced lemons",
+    "category": "fruit",
+    "description": "Heap of whole and sliced lemons and limes with mint in vintage metal grid box over old wooden table with turquoise wooden background. dark rustic style.",
+    "price": 27.14,
+    "rating": 2,
+    "imageName": "sliced_lemons"
+  },
+  {
+    "id": "vwxyzab",
+    "title": "Plums",
+    "category": "fruit",
+    "description": "Yellow and red sweet plums",
+    "price": 19.18,
+    "rating": 1,
+    "imageName": "plums"
+  },
+  {
+    "id": "cdefghi",
+    "title": "French fries",
+    "category": "bakery",
+    "description": "Homemade oven baked french fries with ketchup",
+    "price": 18.32,
+    "rating": 3,
+    "imageName": "french_fries"
+  },
+  {
+    "id": "jklmnop",
+    "title": "Strawberries",
+    "category": "fruit",
+    "description": "Healthy breakfast set. rice cereal or porridge with fresh strawberry, apricots, almond and honey over white rustic wood backdrop, top view,",
+    "price": 15.13,
+    "rating": 3,
+    "imageName": "strawberries"
+  },
+  {
+    "id": "qrstuvw",
+    "title": "Ground beef meat burger",
+    "category": "meat",
+    "description": "Raw ground beef meat burger steak cutlets with seasoning on vintage wooden boards, black background",
+    "price": 11.73,
+    "rating": 5,
+    "imageName": "ground_beef_meat_burger"
+  },
+  {
+    "id": "xyzabcd",
+    "title": "Tomatoes",
+    "category": "fruit",
+    "description": "Organic tomatoes made from a local farm",
+    "price": 26.03,
+    "rating": 4,
+    "imageName": "tomatoes"
+  },
+  {
+    "id": "efghijk",
+    "title": "Basil",
+    "category": "vegetable",
+    "description": "Healthy green basil with fresh tomatoes",
+    "price": 15.19,
+    "rating": 4,
+    "imageName": "basil"
+  },
+  {
+    "id": "lmnopqr",
+    "title": "Breakfast sandwich",
+    "category": "meat",
+    "description": "Homemade breakfast sandwich with sausage, cheese, and egg on wooden table",
+    "price": 21.88,
+    "rating": 2,
+    "imageName": "breakfast_sandwich"
+  },
+  {
+    "id": "stuvwxy",
+    "title": "Pancakes",
+    "category": "bakery",
+    "description": "Homemade pancakes with fresh blueberries and honey",
+    "price": 15.49,
+    "rating": 2,
+    "imageName": "pancakes"
+  }
+]
