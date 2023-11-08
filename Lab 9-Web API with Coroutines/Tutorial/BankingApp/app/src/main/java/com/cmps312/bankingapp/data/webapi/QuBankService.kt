@@ -16,6 +16,9 @@ import io.ktor.client.request.setBody
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 import kotlinx.serialization.json.Json
 
 class QuBankService : BankService {
@@ -32,16 +35,22 @@ class QuBankService : BankService {
         }
     }
 
-    override suspend fun getTransfers(cid: Int): List<Transfer> {
+    override fun getTransfers(cid: Int): Flow<List<Transfer>> = flow {
         val url = "$baseUrl/transfers/$cid"
-        return client.get(url).body()
+        val refreshIntervalMs = 5000L
+
+        while (true) {
+            emit(client.get(url).body())
+            delay(refreshIntervalMs)
+        }
+
     }
 
     override suspend fun addTransfers(transfer: Transfer): Transfer {
         val url = "$baseUrl/transfers/${transfer.cid}"
-        return client.post(url){
-           setBody(transfer)
-           contentType(ContentType.Application.Json)
+        return client.post(url) {
+            setBody(transfer)
+            contentType(ContentType.Application.Json)
         }.body()
     }
 
@@ -61,8 +70,8 @@ class QuBankService : BankService {
     }
 
     override suspend fun updateBeneficiaries(cid: Int, beneficiary: Beneficiary): String {
-        val url =  "$baseUrl/beneficiaries/$cid"
-        return client.put(url){
+        val url = "$baseUrl/beneficiaries/$cid"
+        return client.put(url) {
             setBody(beneficiary)
             contentType(ContentType.Application.Json)
         }.body()

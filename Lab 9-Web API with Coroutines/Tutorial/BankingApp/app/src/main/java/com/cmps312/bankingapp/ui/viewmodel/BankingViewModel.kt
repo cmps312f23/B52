@@ -21,18 +21,25 @@ class BankingViewModel(appContext: Application) : AndroidViewModel(appContext) {
     private val cid = 10001
     val accounts = mutableStateListOf<Account>()
     val beneficiaries = mutableStateListOf<Beneficiary>()
-    val transfers = mutableStateListOf<Transfer>()
+
+    //    val transfers = mutableStateListOf<Transfer>()
+    val transfers = quBankService.getTransfers(cid).stateIn(
+        scope = viewModelScope,
+        started = SharingStarted.WhileSubscribed(5000),
+        initialValue = emptyList()
+    )
 
 //    var transfers = mutableStateListOf<Transfer>()
 
     init {
         getAccounts()
-        getTransfers()
+//        getTransfers()
     }
 
-    private fun getTransfers() = viewModelScope.launch {
-       transfers.addAll(quBankService.getTransfers(cid))
-    }
+//    private fun getTransfers() = viewModelScope.launch {
+//        transfers.clear()
+//        transfers.addAll(quBankService.getTransfers(cid))
+//    }
 
     // used for holding the details of new Transfer - used instead of Nav Component nav args
     lateinit var newTransfer: Transfer
@@ -50,19 +57,22 @@ class BankingViewModel(appContext: Application) : AndroidViewModel(appContext) {
     }
 
     fun getAccounts() = viewModelScope.launch {
-      // TODO("To be implemented")
+        accounts.clear()
+        accounts.addAll(quBankService.getAccounts(cid))
     }
 
-    fun addTransfer(transfer: Transfer) {
-       // TODO("To be implemented")
+    fun addTransfer(transfer: Transfer) = viewModelScope.launch {
+        quBankService.addTransfers(transfer)
     }
 
-    fun getBeneficiaries() {
-       // TODO("To be implemented")
+    fun getBeneficiaries() = viewModelScope.launch {
+        beneficiaries.clear()
+        beneficiaries.addAll(quBankService.getBeneficiaries(cid))
     }
 
-    fun deleteTransfer(transferId: String) {
-       // TODO("To be implemented")
+
+    fun deleteTransfer(transferId: String) = viewModelScope.launch {
+        quBankService.deleteTransfers(cid, transferId)
     }
 }
 

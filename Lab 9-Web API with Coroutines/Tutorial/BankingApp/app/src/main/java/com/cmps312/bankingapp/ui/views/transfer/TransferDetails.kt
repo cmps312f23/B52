@@ -33,7 +33,7 @@ fun TransferDetails(
 ) {
 
     val transfer =
-        bankingViewModel.transfers
+        bankingViewModel.transfers.collectAsState().value
             .find { it.transferId == transferId }
 
     Scaffold(

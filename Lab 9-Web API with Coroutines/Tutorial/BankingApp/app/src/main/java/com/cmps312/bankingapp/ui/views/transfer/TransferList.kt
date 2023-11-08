@@ -25,7 +25,7 @@ import com.cmps312.bankingapp.ui.navigation.Screen
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TransferList(bankingViewModel: BankingViewModel, onTransferSelected: (String) -> Unit) {
-    val transfers = bankingViewModel.transfers
+    val transfers = bankingViewModel.transfers.collectAsState().value
 
     Scaffold(
         topBar = {

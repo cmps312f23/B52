@@ -1,7 +1,9 @@
 package com.cmps312.bankingapp.data.model
 
+import kotlinx.coroutines.flow.Flow
+
 interface BankService {
-    suspend fun getTransfers(cid: Int) : List<Transfer>
+    fun getTransfers(cid: Int) : Flow<List<Transfer>>
     suspend fun addTransfers(transfer: Transfer) : Transfer
     suspend fun deleteTransfers(cid: Int, transferId: String) : String
     suspend fun getAccounts(cid: Int) : List<Account>

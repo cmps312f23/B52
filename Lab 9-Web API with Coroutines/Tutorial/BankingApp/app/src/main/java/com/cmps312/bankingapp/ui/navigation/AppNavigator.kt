@@ -23,7 +23,7 @@ import com.cmps312.bankingapp.ui.views.transfer.TransferList
 @Composable
 fun AppNavigator(navHostController: NavHostController, paddingValues: PaddingValues) {
     val bankingViewModel: BankingViewModel =
-        viewModel<BankingViewModel>(viewModelStoreOwner = LocalContext.current as ComponentActivity)
+        viewModel(viewModelStoreOwner = LocalContext.current as ComponentActivity)
 
     NavHost(
         navController = navHostController,
