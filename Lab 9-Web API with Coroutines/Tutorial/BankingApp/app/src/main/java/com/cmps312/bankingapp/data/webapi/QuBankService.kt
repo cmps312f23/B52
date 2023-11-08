@@ -27,6 +27,7 @@ class QuBankService : BankService {
         install(ContentNegotiation) {
             json(json = Json {
                 ignoreUnknownKeys = true
+                prettyPrint = true
             })
         }
     }

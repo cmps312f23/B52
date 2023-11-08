@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.cmps312.bankingapp.data.model.Account
 import com.cmps312.bankingapp.data.model.Beneficiary
 import com.cmps312.bankingapp.data.model.Transfer
+import com.cmps312.bankingapp.data.webapi.QuBankService
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
@@ -15,24 +16,22 @@ import kotlinx.coroutines.launch
 
 class BankingViewModel(appContext: Application) : AndroidViewModel(appContext) {
     private val TAG = "TransferViewModel"
-//    private val quBankService = QuBankService()
+    private val quBankService = QuBankService()
 
     private val cid = 10001
     val accounts = mutableStateListOf<Account>()
     val beneficiaries = mutableStateListOf<Beneficiary>()
-    val transfers = mutableStateListOf<Transfer>(
-        Transfer("123", 123.0 , "Name" , "123", "e44" )
-    )
+    val transfers = mutableStateListOf<Transfer>()
 
 //    var transfers = mutableStateListOf<Transfer>()
 
     init {
         getAccounts()
+        getTransfers()
     }
 
-    private fun getTransfers() {
-        Log.d("Transfers", "getTransfers: ")
-      //  TODO("To be implemented")
+    private fun getTransfers() = viewModelScope.launch {
+       transfers.addAll(quBankService.getTransfers(cid))
     }
 
     // used for holding the details of new Transfer - used instead of Nav Component nav args
