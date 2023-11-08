@@ -3,7 +3,7 @@ package com.cmps312.bankingapp.data.model
 interface BankService {
     suspend fun getTransfers(cid: Int) : List<Transfer>
     suspend fun addTransfers(transfer: Transfer) : Transfer
-    suspend fun deleteTransfers(cid: Int, tranferId: String) : String
+    suspend fun deleteTransfers(cid: Int, transferId: String) : String
 
     suspend fun getAccounts(cid: Int) : List<Account>
 
