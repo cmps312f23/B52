@@ -9,8 +9,8 @@ import kotlinx.coroutines.flow.Flow
 class TodoRepository(appContext: Application) {
 
 //    two objects , one for todoDao and another for projectDap
-    val projectDao = AppDatabase.getDatabase(appContext).projectDao()
-    val todoDao = AppDatabase.getDatabase(appContext).todoDao()
+    private val projectDao = AppDatabase.getDatabase(appContext).projectDao()
+    private val todoDao = AppDatabase.getDatabase(appContext).todoDao()
 
     fun observeProjects(): Flow<List<Project>> = projectDao.observeProjects()
 
