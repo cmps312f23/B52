@@ -8,24 +8,24 @@ import androidx.room.RoomDatabase
 import com.cmps312.todolistapp.entity.Project
 import com.cmps312.todolistapp.entity.Todo
 
-@Database(entities = [Todo::class, Project::class], version = 1)
-abstract class TodoDB : RoomDatabase() {
-    abstract fun ProjectDao(): ProjectDao
-    abstract fun TodoDao(): TodoDao
+@Database(entities = [Todo::class, Project::class], version = 2, exportSchema = true)
+abstract class AppDatabase : RoomDatabase() {
+    abstract fun projectDao(): ProjectDao
+    abstract fun todoDao(): TodoDao
 
     companion object {
-        private var db: TodoDB? = null
-        fun getDatabase(context: Context): TodoDB {
+        private var db: AppDatabase? = null
+        fun getDatabase(context: Context): AppDatabase {
             if (db == null) {
                 db = Room.databaseBuilder(
                     context = context.applicationContext,
-                    TodoDB::class.java,
-                    "todo.db"
+                    AppDatabase::class.java,
+                    "myTodo.db"
                 )
                     .fallbackToDestructiveMigration()
                     .build()
             }
-            return db as TodoDB
+            return db as AppDatabase
         }
     }
 

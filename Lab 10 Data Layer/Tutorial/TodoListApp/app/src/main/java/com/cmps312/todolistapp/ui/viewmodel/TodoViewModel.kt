@@ -16,6 +16,7 @@ import kotlinx.coroutines.launch
 class TodoViewModel(appContext: Application) : AndroidViewModel(appContext) {
 
     private val todoRepository by lazy { TodoRepository(appContext) }
+
     var projectsFlow = todoRepository.observeProjects().stateIn(
         scope = viewModelScope,
         started = SharingStarted.WhileSubscribed(5000),
@@ -28,7 +29,7 @@ class TodoViewModel(appContext: Application) : AndroidViewModel(appContext) {
     lateinit var selectedProject: Project
 
     fun getTodos(project: Project) {
-        todos = todoRepository.getTodoListByProject(project.id)
+        todos = todoRepository.observeTodos(project.id)
         Log.d("TAG", "getTodos: $project.id $project.name")
     }
 
