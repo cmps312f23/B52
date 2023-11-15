@@ -8,10 +8,7 @@ import androidx.room.RoomDatabase
 import com.cmps312.todolistapp.entity.Project
 import com.cmps312.todolistapp.entity.Todo
 
-@Database(
-    entities = [Todo::class, Project::class],
-    version = 1
-)
+@Database(entities = [Todo::class, Project::class], version = 1)
 abstract class TodoDB : RoomDatabase() {
     abstract fun ProjectDao(): ProjectDao
     abstract fun TodoDao(): TodoDao
