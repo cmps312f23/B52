@@ -1,20 +1,22 @@
 package com.cmps312.todolistapp.ui.view
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material3.Card
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import com.cmps312.todolistapp.entity.Project
@@ -28,7 +30,6 @@ fun TodoScreen(
     onDeleteTodo: (Todo) -> Unit,
     onEditTodo: (Project) -> Unit
 ) {
-
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(
@@ -40,28 +41,36 @@ fun TodoScreen(
                 Icon(Icons.Filled.Add, "Add")
             }
         }
-    ) { _ ->
-        LazyColumn {
+    ) { paddingValues ->
+        LazyColumn(modifier = Modifier.padding(paddingValues)) {
             items(todos) { todo ->
-                TodoCard(todo)
+                TodoCard(todo, onDeleteTodo = {
+                    onDeleteTodo(todo)
+                })
             }
         }
     }
 }
 
 @Composable
-fun TodoCard(todo: Todo) {
+fun TodoCard(todo: Todo, onDeleteTodo: () -> Unit) {
     Card(
         modifier = Modifier
             .padding(10.dp)
             .fillMaxWidth()
     ) {
-        Row(modifier = Modifier.padding(15.dp)) {
-            Column(modifier = Modifier)
+        Row(modifier = Modifier.padding(15.dp) , verticalAlignment = Alignment.CenterVertically) {
+            Column(modifier = Modifier.weight(1f))
             {
                 Text(text = "Task Name:${todo.title}")
                 Text(text = "Priority:${todo.priority}")
             }
+            Icon(
+                imageVector = Icons.Filled.Delete,
+                contentDescription = "delete icon",
+                Modifier.clickable {
+                    onDeleteTodo()
+                })
         }
 
     }

@@ -78,7 +78,7 @@ fun AppNavHost(navHostController: NavHostController, paddingValues: PaddingValue
                     }
                 },
                 onDeleteTodo = {
-
+                    todolistViewModel.deleteTodo(it)
                 },
                 onEditTodo = {
 
@@ -89,6 +89,7 @@ fun AppNavHost(navHostController: NavHostController, paddingValues: PaddingValue
         composable(route = Screen.TodoEditor.route) {
             val todo = Todo(pid = todolistViewModel.selectedProject.id)
             TodoEditor(todo, onSubmitTodo = {
+                todolistViewModel.addTodo(it)
                 navHostController.navigate(Screen.TodoScreen.route) {
                     launchSingleTop = true
                     popUpTo(Screen.TodoScreen.route) {
