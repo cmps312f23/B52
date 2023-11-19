@@ -2,10 +2,10 @@ package com.cmps312.todolistapp.ui.navigation
 
 sealed class Screen(val route: String, val title: String) {
 
-    object Home : Screen(route = "Projects", title = "Project List")
-    object AddProject : Screen(route = "Add Project", title = "Add Project")
-    object TodoHome : Screen(route = "Todo List", title = "Todo List")
-    object AddTodo : Screen(route = "Add Todo", title = "Add Todo")
+    data object ProjectScreen : Screen(route = "Project Screen", title = "Project List")
+    data object ProjectEditor : Screen(route = "Project Editor", title = "Project Editor")
+    data object TodoScreen : Screen(route = "Todo Screen", title = "Todo List")
+    data object TodoEditor : Screen(route = "Todo Editor", title = "Add Todo")
 
 
 }

@@ -17,21 +17,24 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
+import com.cmps312.todolistapp.entity.Project
 import com.cmps312.todolistapp.entity.Todo
-import com.cmps312.todolistapp.ui.viewmodel.TodoViewModel
 
 
 @Composable
-fun TodoHome(onNavigate: () -> Unit, todoViewModel: TodoViewModel) {
-    val todos = todoViewModel.todos
-        .collectAsStateWithLifecycle(initialValue = emptyList()).value
+fun TodoScreen(
+    todos: List<Todo>,
+    onAddTodo: () -> Unit,
+    onDeleteTodo: (Todo) -> Unit,
+    onEditTodo: (Project) -> Unit
+) {
+
     Scaffold(
         floatingActionButton = {
             FloatingActionButton(
-                onClick = { onNavigate() },
+                onClick = { onAddTodo() },
                 modifier = Modifier
-                    .size(width = 62.dp, height = 62.dp)
+//                    .size(width = 62.dp, height = 62.dp)
                     .padding(10.dp)
             ) {
                 Icon(Icons.Filled.Add, "Add")

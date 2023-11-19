@@ -13,14 +13,17 @@ import androidx.room.PrimaryKey
             parentColumns = ["id"],
             childColumns = ["pid"],
             onDelete = ForeignKey.CASCADE,
-            onUpdate = ForeignKey.CASCADE
+            onUpdate = ForeignKey.CASCADE,
         )
     ]
 )
 data class Todo(
     var title: String? = null,
     var priority: String? = null,
+    var date: String? = null,
+    var time: String? = null,
     var pid: Int,
+
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
 )

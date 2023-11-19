@@ -1,7 +1,6 @@
 package com.cmps312.todolistapp.ui.view
 
 import android.widget.Toast
-import androidx.activity.ComponentActivity
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -20,35 +19,37 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.cmps312.todolistapp.entity.Project
-import com.cmps312.todolistapp.ui.viewmodel.TodoViewModel
 
 @Composable
-fun AddProject(onAddProject: () -> Unit) {
-    val todoViewModel =
-        viewModel<TodoViewModel>(viewModelStoreOwner = LocalContext.current as ComponentActivity)
-    val context = LocalContext.current
+fun ProjectEditor(onSubmitProject: (Project) -> Unit, project: Project) {
 
-    var projectName by remember { mutableStateOf("") }
-    Card(modifier = Modifier
-        .padding(16.dp)
-        .fillMaxWidth()
-        .fillMaxSize() ) {
+    val context = LocalContext.current
+    var projectName by remember { mutableStateOf(project.name) }
+
+
+    Card(
+        modifier = Modifier
+            .padding(16.dp)
+            .fillMaxWidth()
+    ) {
         Column(
             modifier = Modifier
                 .padding(16.dp)
                 .fillMaxWidth()
         ) {
 
-            Text(text = "Add Project",
+            Text(
+                text = "Project Editor",
                 Modifier
                     .align(
                         Alignment.CenterHorizontally
                     )
-                    .padding(16.dp), fontWeight = FontWeight.Bold)
+                    .padding(16.dp), fontWeight = FontWeight.Bold
+            )
 
-            OutlinedTextField(value = projectName,
+            OutlinedTextField(
+                value = projectName,
                 onValueChange = { projectName = it },
                 label = { Text(text = "Project Name ") },
                 modifier = Modifier
@@ -59,24 +60,27 @@ fun AddProject(onAddProject: () -> Unit) {
                     .fillMaxWidth()
             )
 
-            Button(onClick = {
-                if (
-                    projectName.isNotEmpty()
-                ) {
-                    val newProject = Project(projectName)
-                    todoViewModel.addProject(newProject)
-                    onAddProject()
-                } else {
-                    Toast.makeText(context, "Please provide all the information",
-                        Toast.LENGTH_SHORT).show()
-                }
-            },
+            Button(
+                onClick = {
+                    if (
+                        projectName.isNotEmpty()
+                    ) {
+                        project.name = projectName
+                        onSubmitProject(project)
+                    } else {
+                        Toast.makeText(
+                            context, "Please provide all the information",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                },
                 modifier = Modifier
                     .align(
                         Alignment.CenterHorizontally
                     )
-                    .padding(16.dp)) {
-                Text(text = "Add Project")
+                    .padding(16.dp)
+            ) {
+                Text(text = "Submit")
             }
         }
     }
