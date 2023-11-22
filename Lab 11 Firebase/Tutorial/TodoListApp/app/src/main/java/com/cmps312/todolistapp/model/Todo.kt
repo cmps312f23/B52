@@ -9,6 +9,7 @@ data class Todo(
     var time: String? = null,
     var pid: String,
 
+    @DocumentId
     val id: String = "",
 ) {
     //    important to have this
