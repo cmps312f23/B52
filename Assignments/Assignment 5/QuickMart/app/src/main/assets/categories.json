@@ -1,0 +1,30 @@
+[
+  {
+    "id": 0,
+    "category": "All"
+  },
+  {
+    "id": 1,
+    "category": "Dairy"
+  },
+  {
+    "id": 2,
+    "category": "Fruit"
+  },
+  {
+    "id": 3,
+    "category": "Vegetable"
+  },
+  {
+    "id": 4,
+    "category": "Bakery"
+  },
+  {
+    "id": 5,
+    "category": "Meat"
+  },
+  {
+    "id": 6,
+    "category": "Vegan"
+  }
+]
