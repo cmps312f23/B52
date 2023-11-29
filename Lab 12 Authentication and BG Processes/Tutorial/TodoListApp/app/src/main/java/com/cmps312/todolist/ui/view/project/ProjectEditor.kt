@@ -28,13 +28,15 @@ import com.cmps312.todolist.model.Project
 
 @OptIn(ExperimentalGlideComposeApi::class)
 @Composable
-fun ProjectEditor(onSubmitProject: (Project , Uri?) -> Unit, project: Project) {
+fun ProjectEditor(onSubmitProject: (Project, Uri?) -> Unit, project: Project) {
 
     val context = LocalContext.current
     var projectName by remember { mutableStateOf(project.name) }
 //  TODO  image chooser
     var imageUri by remember { mutableStateOf<Uri?>(null) }
-
+    val imageChooser = rememberLauncherForActivityResult(ActivityResultContracts.GetContent()) {
+        imageUri = it
+    }
     Card(
         modifier = Modifier
             .padding(16.dp)
@@ -68,10 +70,10 @@ fun ProjectEditor(onSubmitProject: (Project , Uri?) -> Unit, project: Project) {
             )
             ElevatedButton(onClick = {
 //                TODO ADD IMAGE CHOOSER
+                imageChooser.launch("image/*")
             }) { Text(text = "Choose Image") }
 
-//            GlideImage(model = imageUri, contentDescription = "")
-
+            GlideImage(model = imageUri, contentDescription = "")
             Button(
                 onClick = {
                     if (
