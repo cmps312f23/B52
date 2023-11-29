@@ -35,7 +35,10 @@ fun AppNavHost(
 
     NavHost(
         navController = navHostController,
-        startDestination = if (loggedInUser != null) NavDestinations.ProjectScreen.route else NavDestinations.LoginScreen.route,
+        startDestination = if (loggedInUser != null)
+                                NavDestinations.ProjectScreen.route
+                            else
+                                NavDestinations.LoginScreen.route,
         modifier = Modifier.padding(paddingValues)
     ) {
 
@@ -98,7 +101,7 @@ fun AppNavHost(
         }
         composable(route = NavDestinations.RegisterScreen.route) {
             val registrationSuccess =
-                signInViewModel.userRegistratedSuccessfully.collectAsStateWithLifecycle().value
+                signInViewModel.userRegisteredSuccessfully.collectAsStateWithLifecycle().value
             if (registrationSuccess)
                 navHostController.navigate(NavDestinations.LoginScreen.route) {
                     popUpTo(NavDestinations.LoginScreen.route) {
