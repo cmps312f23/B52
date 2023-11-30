@@ -15,6 +15,7 @@ class SignInViewModel(application: Application) : AndroidViewModel(application) 
     val context = application
     private var auth = FirebaseAuth.getInstance()
 
+
     private val _user: MutableStateFlow<User?> = MutableStateFlow(null)
     val user: StateFlow<User?> = _user
     var userRegisteredSuccessfully = MutableStateFlow(false)
