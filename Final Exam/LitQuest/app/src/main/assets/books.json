@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "title": "Android in Action, Second Edition",
+        "isbn": "X1b3F",
+        "author": "W. Frank Ableson",
+        "genreId": 1,
+        "image": "image_1",
+        "description": "A comprehensive tutorial for Android developers covering architectural concepts and implementation strategies."
+    },
+    {
+        "id": 2,
+        "title": "Specification by Example",
+        "isbn": "XK7z4",
+        "author": "Gojko Adzic",
+        "genreId": 4,
+        "image": "image_2",
+        "description": "Focuses on software engineering and provides insights into creating software specifications through practical examples and techniques."
+    },
+    {
+        "id": 3,
+        "title": "Flex 3 in Action",
+        "isbn": "XQpR8",
+        "author": "Tariq Ahmed",
+        "genreId": 2,
+        "image": "image_3",
+        "description": "A hands-on tutorial for creating high-quality, interactive Rich Internet Applications (RIAs) using Flex 3."
+    },
+    {
+        "id": 4,
+        "title": "Flex 4 in Action",
+        "isbn": "XeVn0",
+        "author": "Tariq Ahmed",
+        "genreId": 2,
+        "image": "image_4",
+        "description": "Introduces Flex 4 and guides you through building dynamic and visually appealing Rich Internet Applications (RIAs)."
+    },
+    {
+        "id": 5,
+        "title": "Collective Intelligence in Action",
+        "isbn": "XwLr2",
+        "author": "Satnam Alag",
+        "genreId": 2,
+        "image": "image_5",
+        "description": "A practical guide to implementing collective-intelligence concepts using Java, emphasizing data gathering and mining techniques, personalization, and collaboration."
+    },
+    {
+        "id": 6,
+        "title": "Zend Framework in Action",
+        "isbn": "XJpC0",
+        "author": "Rob Allen",
+        "genreId": 3,
+        "image": "image_6",
+        "description": "A comprehensive tutorial on using the Zend Framework to create web-based applications and web services."
+    },
+    {
+        "id": 7,
+        "title": "Flex on Java",
+        "isbn": "XyFm7",
+        "author": "Bernerd Allmon",
+        "genreId": 2,
+        "image": "image_7",
+        "description": "Teaches you how to integrate Flex with Java to create rich web applications."
+    },
+    {
+        "id": 8,
+        "title": "Griffon in Action",
+        "isbn": "X9hI4",
+        "author": "Andres Almiray",
+        "genreId": 1,
+        "image": "image_8",
+        "description": "A tutorial for Java developers exploring Griffon's high productivity approach to building Swing applications."
+    },
+    {
+        "id": 9,
+        "title": "OSGi in Depth",
+        "isbn": "XzUa9",
+        "author": "Alexandre de Castro Alves",
+        "genreId": 1,
+        "image": "image_9",
+        "description": "Delves into building application frameworks using the OSGi service platform, covering programming models, modularization techniques, and the development of domain-specific applications."
+    }
+]

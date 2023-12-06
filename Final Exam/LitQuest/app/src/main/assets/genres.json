@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "Java Software Engineering",
+        "image": "java"
+    },
+    {
+        "id": 3,
+        "name": "Web Development",
+        "image": "webdev"
+    },
+    {
+        "id": 2,
+        "name": "Internet",
+        "image": "internet"
+    },
+    {
+        "id": 4,
+        "name": "Science Fiction",
+        "image": "fiction"
+    }
+]
