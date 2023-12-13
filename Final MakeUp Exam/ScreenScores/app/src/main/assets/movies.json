@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Inception",
+    "actors": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+    "poster": "inception_poster",
+    "releaseDate": "2010-07-16",
+    "movieId": 1
+  },
+  {
+    "name": "The Hangover",
+    "actors": "Bradley Cooper, Ed Helms, Zach Galifianakis",
+    "poster": "hangover_poster",
+    "releaseDate": "2009-06-05",
+    "movieId": 2
+  },
+  {
+    "name": "The Dark Knight",
+    "actors": "Christian Bale, Heath Ledger, Aaron Eckhart",
+    "poster": "dark_knight_poster",
+    "releaseDate": "2008-07-18",
+    "movieId": 3
+  },
+  {
+    "name": "Pulp Fiction",
+    "actors": "John Travolta, Uma Thurman, Samuel L. Jackson",
+    "poster": "pulp_fiction_poster",
+    "releaseDate": "1994-10-14",
+    "movieId": 4
+  },
+  {
+    "name": "Avatar",
+    "actors": "Sam Worthington, Zoe Saldana, Sigourney Weaver",
+    "poster": "avatar_poster",
+    "releaseDate": "2009-12-18",
+    "movieId": 5
+  },
+  {
+    "name": "The Matrix",
+    "actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+    "poster": "matrix_poster",
+    "releaseDate": "1999-03-31",
+    "movieId": 6
+  },
+  {
+    "name": "Forrest Gump",
+    "actors": "Tom Hanks, Robin Wright, Gary Sinise",
+    "poster": "forrest_gump_poster",
+    "releaseDate": "1994-07-06",
+    "movieId": 7
+  },
+  {
+    "name": "Abduction",
+    "actors": "Taylor Lautner, Lily Collins, Alfred Molina",
+    "poster": "abduction_poster",
+    "releaseDate": "2011-09-23",
+    "movieId": 8
+  },
+  {
+    "name": "Shawshank Redemption",
+    "actors": "Tim Robbins, Morgan Freeman, Bob Gunton",
+    "poster": "shawshank_redemption_poster",
+    "releaseDate": "1994-09-23",
+    "movieId": 9
+  },
+  {
+    "name": "The Godfather",
+    "actors": "Marlon Brando, Al Pacino, James Caan",
+    "poster": "godfather_poster",
+    "releaseDate": "1972-03-24",
+    "movieId": 10
+  },
+  {
+    "name": "The Shining",
+    "actors": "Jack Nicholson, Shelley Duvall, Danny Lloyd",
+    "poster": "shining_poster",
+    "releaseDate": "1980-05-23",
+    "movieId": 11
+  },
+  {
+    "name": "Inglourious Basterds",
+    "actors": "Brad Pitt, Christoph Waltz, Michael Fassbender",
+    "poster": "inglourious_basterds_poster",
+    "releaseDate": "2009-08-21",
+    "movieId": 12
+  },
+  {
+    "name": "22 Jump Street",
+    "actors": "Jonah Hill, Channing Tatum, Ice Cube",
+    "poster": "jump_street_poster",
+    "releaseDate": "2014-06-13",
+    "movieId": 13
+  },
+  {
+    "name": "Blade Runner 2049",
+    "actors": "Ryan Gosling, Harrison Ford, Ana de Armas",
+    "poster": "blade_runner_2049_poster",
+    "releaseDate": "2017-10-06",
+    "movieId": 14
+  },
+  {
+    "name": "The 4400",
+    "actors": "Joel Gretsch, Jacqueline McKenzie, Patrick John Flueger",
+    "poster": "the_4400_poster",
+    "releaseDate": "2004-07-11",
+    "movieId": 15
+  }
+]

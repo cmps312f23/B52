@@ -1,0 +1,152 @@
+[
+  {
+    "ratingId": 1,
+    "score": 8.5,
+    "comment": "I was completely blown away by the incredible visuals and mind-bending plot. It's a must-watch!",
+    "movieId": 1
+  },
+  {
+    "ratingId": 2,
+    "score": 7.0,
+    "comment": "The humor in this movie is fantastic. I laughed throughout the entire film. Great comedy!",
+    "movieId": 2
+  },
+  {
+    "ratingId": 3,
+    "score": 9.5,
+    "comment": "Christopher Nolan's masterpiece! The Dark Knight is not just a superhero movie; it's a cinematic experience.",
+    "movieId": 3
+  },
+  {
+    "ratingId": 4,
+    "score": 8.0,
+    "comment": "Quentin Tarantino's Pulp Fiction is a timeless classic with its unconventional narrative and unforgettable characters.",
+    "movieId": 4
+  },
+  {
+    "ratingId": 5,
+    "score": 7.5,
+    "comment": "Avatar's visual effects are groundbreaking, and the story takes you on an epic journey. A visually stunning film!",
+    "movieId": 5
+  },
+  {
+    "ratingId": 6,
+    "score": 8.2,
+    "comment": "The Matrix revolutionized the science fiction genre. Its thought-provoking plot and action sequences are legendary.",
+    "movieId": 6
+  },
+  {
+    "ratingId": 7,
+    "score": 8.9,
+    "comment": "Forrest Gump is a heartwarming and beautifully crafted film that takes you on an emotional rollercoaster.",
+    "movieId": 7
+  },
+  {
+    "ratingId": 8,
+    "score": 5.5,
+    "comment": "Abduction fell short of expectations. The plot seemed disjointed, and the execution was lacking.",
+    "movieId": 8
+  },
+  {
+    "ratingId": 9,
+    "score": 9.7,
+    "comment": "Shawshank Redemption is an absolute masterpiece. The storytelling, acting, and emotion are unparalleled.",
+    "movieId": 9
+  },
+  {
+    "ratingId": 10,
+    "score": 9.0,
+    "comment": "The Godfather is a cinematic gem with powerful performances and a gripping storyline. A true classic!",
+    "movieId": 10
+  },
+  {
+    "ratingId": 11,
+    "score": 8.3,
+    "comment": "Stanley Kubrick's The Shining is a psychological horror masterpiece. It keeps you on the edge of your seat.",
+    "movieId": 11
+  },
+  {
+    "ratingId": 12,
+    "score": 8.0,
+    "comment": "Inglourious Basterds is a brilliant and intense film with Tarantino's signature style. Captivating from start to finish.",
+    "movieId": 12
+  },
+  {
+    "ratingId": 13,
+    "score": 7.2,
+    "comment": "22 Jump Street maintains the humor of the first film, delivering laughs and great chemistry between the leads.",
+    "movieId": 13
+  },
+  {
+    "ratingId": 14,
+    "score": 8.6,
+    "comment": "Blade Runner 2049 is visually stunning, and it successfully expands on the original's themes. A visual and narrative masterpiece.",
+    "movieId": 14
+  },
+  {
+    "ratingId": 15,
+    "score": 7.8,
+    "comment": "The 4400 is an intriguing sci-fi series that keeps you hooked with its mysterious plot and well-developed characters.",
+    "movieId": 15
+  },
+  {
+    "ratingId": 16,
+    "score": 8.8,
+    "comment": "Absolutely loved the character development in this one. Each character has a unique story arc.",
+    "movieId": 1
+  },
+  {
+    "ratingId": 17,
+    "score": 7.5,
+    "comment": "The cinematography in this movie is outstanding. Every frame is a work of art.",
+    "movieId": 1
+  },
+  {
+    "ratingId": 18,
+    "score": 9.0,
+    "comment": "A thrilling experience from start to finish. The suspense kept me on the edge of my seat.",
+    "movieId": 1
+  },
+  {
+    "ratingId": 19,
+    "score": 8.2,
+    "comment": "The character development is excellent, and the emotional moments hit hard.",
+    "movieId": 1
+  },
+  {
+    "ratingId": 20,
+    "score": 7.7,
+    "comment": "I can't get over how great the soundtrack is. It enhances the overall atmosphere of the film.",
+    "movieId": 1
+  },
+  {
+    "ratingId": 21,
+    "score": 6.5,
+    "comment": "The chemistry between the lead actors is undeniable. They really bring the characters to life.",
+    "movieId": 2
+  },
+  {
+    "ratingId": 22,
+    "score": 7.8,
+    "comment": "The plot twists kept me guessing until the very end. A well-crafted story.",
+    "movieId": 2
+  },
+  {
+    "ratingId": 23,
+    "score": 6.0,
+    "comment": "The film's message about friendship and loyalty is heartwarming.",
+    "movieId": 2
+  },
+  {
+    "ratingId": 24,
+    "score": 8.1,
+    "comment": "An entertaining ride with unexpected surprises. Highly recommended!",
+    "movieId": 2
+  },
+  {
+    "ratingId": 25,
+    "score": 7.2,
+    "comment": "The CGI effects were impressive, especially during action sequences.",
+    "movieId": 2
+  }
+]
